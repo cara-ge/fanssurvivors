@@ -63,7 +63,7 @@
             document.getElementById('progress').classList.remove('hidden');
             
             try {
-                const response = await fetch('http://localhost:8080/download', {
+                const response = await fetch('/download', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded',
@@ -88,3 +88,4 @@
     </script>
 </body>
 </html>
+
