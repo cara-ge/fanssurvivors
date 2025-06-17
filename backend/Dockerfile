@@ -1,11 +1,5 @@
-# 示例：适用于 Python + Flask 项目
-FROM python:3.10-slim
-
+FROM python:3.9
 WORKDIR /app
-
-COPY requirements.txt requirements.txt
+COPY . /app
 RUN pip install -r requirements.txt
-
-COPY . .
-
-CMD ["python", "main.py"]
+CMD ["python", "app.py"]
