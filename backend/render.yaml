@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: fanssurvivors-backend
-    env: python
-    rootDir: backend
-    buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
